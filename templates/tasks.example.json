@@ -1,0 +1,13 @@
+{
+  "completedTaskIds": [],
+  "checks": ["npm test; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }", "npm run build; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }"],
+  "tasks": [
+    {
+      "id": "task-001",
+      "description": "Replace with one bounded implementation task",
+      "acceptanceCriteria": ["Replace with observable behavior"],
+      "testCommand": "Replace with the focused test command",
+      "dependsOn": []
+    }
+  ]
+}

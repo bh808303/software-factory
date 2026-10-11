@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "status": { "type": "string", "enum": ["pass", "fail", "blocked"] },
+    "summary": { "type": "string" },
+    "redExitCode": { "type": ["integer", "null"] },
+    "greenExitCode": { "type": ["integer", "null"] },
+    "evidencePaths": { "type": "array", "items": { "type": "string" } },
+    "findings": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": ["status", "summary", "redExitCode", "greenExitCode", "evidencePaths", "findings"]
+}

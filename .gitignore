@@ -1,0 +1,7 @@
+/Gaze/
+/CloudSignature-Brander/
+.env
+.env.*
+!.env.example
+*.pem
+node_modules/
